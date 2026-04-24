@@ -25,9 +25,11 @@ document.getElementById('Rojo').addEventListener('mouseover', ()=>{
 });
 
 document.getElementById('Azul').addEventListener('mouseover', ()=>{
-
+    let cuerpo = document.getElementById('micuerpo');
+    cuerpo.style.backgroundColor = 'blue';
 });
 
 document.getElementById('Amarillo').addEventListener('mouseover', ()=>{
-
+    let cuerpo = document.getElementById('micuerpo');
+    cuerpo.style.backgroundColor = 'yellow';
 });
