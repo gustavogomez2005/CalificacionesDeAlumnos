@@ -18,3 +18,17 @@ h1{
     text-align: center;
     color: brown;
 }
+
+.titulo{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.subtitulo{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
