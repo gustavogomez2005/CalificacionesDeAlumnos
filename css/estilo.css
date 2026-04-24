@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: beige;
+}
+
+header{
+    border: 4;
+    border-style: solid;
+    border-color: black;
+    margin: 5px;
+}
+
+h1{
+    text-align: center;
+    color: brown;
+}
+
+.titulo{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.subtitulo{
+  font-family: "Playwrite BR", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.formCalificaciones{
+    margin-left: 450px;
+    margin-top: 50px;
+
+}
+
+.labelForm{
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+}

@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sekuya&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+BR:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sekuya&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+BR:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sekuya&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
     <title>Calificaciones</title>
 </head>
 <body>
     <header>
-        <h1>Proyecto Calificaciones de Alumnos</h1>
-        <h1>practicando arrays de objetos</h1>
+        <h1 class="titulo">Proyecto Calificaciones de Alumnos</h1>
+        <h1 class="subtitulo">practicando arrays de objetos</h1>
     </header>
 
     <section>
-        <div>
+        <div class="formCalificaciones">
             <input type="text" id="nom" placeholder="Ingrese el nombre" required><br><br>
-            <label>Primera Nota: </label>
+            <label class="labelForm">Primera Nota: </label>
             <input type="number" id="primeraNota"  min="1" max="10" step="1"><br><br>
-            <label>Segnda Nota: </label>
+            <label class="labelForm">Segnda Nota: </label>
             <input type="number" id="segundaNota" min="1" max="10" step="1"><br><br>
-            <label>Tercera Nota: </label>
+            <label class="labelForm">Tercera Nota: </label>
             <input type="number" id="terceraNota"  min="1" max="10" step="1"><br><br>
             <button id="btnAgregar">Agregar</button>                
             <button id="btnMostrarTodo">Mostrar Todo</button>                
