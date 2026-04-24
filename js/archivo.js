@@ -33,3 +33,8 @@ document.getElementById('Amarillo').addEventListener('mouseover', ()=>{
     let cuerpo = document.getElementById('micuerpo');
     cuerpo.style.backgroundColor = 'yellow';
 });
+
+
+document.getElementById('btnAgregar').addEventListener('click', ()=>{
+    
+})
