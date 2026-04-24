@@ -2,11 +2,27 @@ let Calificaciones = [
     {
         alumno: "José",
         materia: "Matemáticas",
-        primeraNota: 5,
+        primeraNota: 6,
         segundaNota: 7,
-        terceraNota: 7,
+        terceraNota: 8,
+        promedio: 7
+    },
+    {
+        alumno: "Pablo",
+        materia: "Matemáticas",
+        primeraNota: 9,
+        segundaNota: 8,
+        terceraNota: 10,
         promedio: 9
     },
+    {
+        alumno: "Juan Pablo",
+        materia: "Historia",
+        primeraNota: 6,
+        segundaNota: 7,
+        terceraNota: 8,
+        promedio: 7
+    },        
 ];
 
 
