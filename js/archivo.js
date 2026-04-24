@@ -67,10 +67,14 @@ document.getElementById('btnAgregar').addEventListener('click', ()=>{
 })
 
 
-document.getElementById('btnMostrarTodo').addEventListener('click', ()=>{
+document.getElementById('btnMostrarTodo').addEventListener('click', (event)=>{
+    event.preventDefault();
     let divmt = document.getElementById('mt');
     let tabla = document.createElement('table');
     let primeraFila = document.createElement('tr');
+    primeraFila.style.border = '2';
+    primeraFila.style.borderStyle = 'solid';
+    primeraFila.style.borderColor = 'black';
 
     let thnom= document.createElement('th');
     thnom.textContent = "Nombre";
@@ -94,13 +98,20 @@ document.getElementById('btnMostrarTodo').addEventListener('click', ()=>{
 
     let thprom= document.createElement('th');
     thprom.textContent = "Promedio";
+
     primeraFila.appendChild(thprom);
+
 
     tabla.appendChild(primeraFila);
     divmt.appendChild(tabla);
     divmt.style.backgroundColor = 'green';
     divmt.style.border = '3';
     divmt.style.borderStyle = 'solid';
+    divmt.style.color = "white";
+    divmt.style.width = '500px';
+    divmt.style.marginLeft = '400px';
+    divmt.style.marginTop = '30px'
+
 
     Calificaciones.forEach(cali => {
         console.log(`${cali.alumno}, ${cali.materia}, ${cali.primeraNota}, ${cali.segundaNota}, ${cali.terceraNota}, ${cali.promedio}`);    
@@ -129,5 +140,9 @@ document.getElementById('btnMostrarTodo').addEventListener('click', ()=>{
         let tdprom= document.createElement('td');
         tdprom.textContent = cali.promedio;
         Filadetalle.appendChild(tdprom);
+
+        tabla.appendChild(Filadetalle);
+        divmt.appendChild(tabla);        
     })
+
 })
