@@ -18,3 +18,16 @@ let unAlumno = {
         terceraNota: nota3,
         promedio: prom   
 }
+
+document.getElementById('Rojo').addEventListener('mouseover', ()=>{
+    let cuerpo = document.getElementById('micuerpo');
+    cuerpo.style.backgroundColor = 'red';
+});
+
+document.getElementById('Azul').addEventListener('mouseover', ()=>{
+
+});
+
+document.getElementById('Amarillo').addEventListener('mouseover', ()=>{
+
+});
