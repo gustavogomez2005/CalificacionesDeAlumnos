@@ -9,15 +9,6 @@ let Calificaciones = [
     },
 ];
 
-let nom, mat, nota1, nota2, nota3, prom;
-let unAlumno = {
-        alumno: nom,
-        materia: mat,
-        primeraNota: nota1,
-        segundaNota: nota2,
-        terceraNota: nota3,
-        promedio: prom   
-}
 
 document.getElementById('Rojo').addEventListener('mouseover', ()=>{
     let cuerpo = document.getElementById('micuerpo');
@@ -36,5 +27,25 @@ document.getElementById('Amarillo').addEventListener('mouseover', ()=>{
 
 
 document.getElementById('btnAgregar').addEventListener('click', ()=>{
-    
+    let nom, mat, nota1, nota2, nota3, prom;
+    nom = document.getElementById('nom').value;
+    mat = document.getElementById('materia').value;
+    nota1 = document.getElementById('primeraNota').value;
+    nota2 = document.getElementById('segundaNota').value;
+    nota3 = document.getElementById('terceraNota').value;
+    prom = (nota1 + nota2 + nota3) / 3;
+
+    let unAlumno = {
+            alumno: nom,
+            materia: mat,
+            primeraNota: nota1,
+            segundaNota: nota2,
+            terceraNota: nota3,
+            promedio: prom   
+    }
+
+    Calificaciones.push(unAlumno);
+    document.getElementById('nom').value = "";
+    document.getElementById('materia').value = "";
+    console.log(Calificaciones);
 })
